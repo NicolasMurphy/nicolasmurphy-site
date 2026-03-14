@@ -18,7 +18,7 @@ body {
 
 /* Header */
 header {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 header a {
@@ -153,4 +153,22 @@ audio + p {
   color: #666;
   margin-top: 0.25rem;
   margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 6rem;
+  padding-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+footer a {
+  font-size: 0.8rem;
+  color: #999;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #666;
 }
