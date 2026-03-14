@@ -7,17 +7,43 @@
 }
 
 body {
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: clamp(16px, 1.5vw, 20px);
   line-height: 1.6;
-  max-width: 650px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
   color: #1a1a1a;
+}
+
+/* Header */
+header {
+  margin-bottom: 2rem;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header a:hover {
+  opacity: 0.7;
+}
+
+header hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 0.75rem;
+}
+
+/* Typography */
+h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 2.5rem;
 }
 
 a {
@@ -29,17 +55,36 @@ a:hover {
   opacity: 0.7;
 }
 
-h1 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-}
-
 time {
   font-size: 0.85rem;
   color: #666;
+  margin-top: 0.5rem;
 }
 
+blockquote {
+  border-left: 2px solid #ccc;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  margin: 2.5rem;
+  color: #444;
+  font-style: italic;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+pre {
+  background-color: #fafafa;
+  border-radius: 4px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 2.5rem 0;
+  font-size: 0.9rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+code {
+  font-size: 0.9rem;
+}
+
+/* Homepage list */
 ul {
   list-style: none;
 }
@@ -56,13 +101,14 @@ li time {
   color: #666;
 }
 
-article {
-  padding-top: 1rem;
-}
-
 li span {
   font-size: 0.9rem;
   color: #666;
+}
+
+/* Article */
+article {
+  padding-top: 1rem;
 }
 
 article header {
@@ -73,61 +119,10 @@ article header h1 {
   margin-bottom: 0.25rem;
 }
 
-blockquote {
-  border-left: 2px solid #ccc;
-  padding: 0.5rem 0 0.5rem 1.5rem;
-  margin: 2rem 2rem;
-  color: #444;
-  font-style: italic;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
 article header p {
   color: #666;
   font-size: 0.9rem;
   margin-bottom: 0.25rem;
-}
-
-.attribution {
-  font-size: 0.8rem;
-  color: #666;
-  margin-top: 0.25rem;
-  margin-bottom: 1.5rem;
-}
-
-audio {
-  width: 100%;
-  margin: 0.5rem 0 1rem 0;
-}
-
-p + audio {
-  margin-top: 0.75rem;
-}
-
-article p {
-  margin-bottom: 1.5rem;
-}
-
-header a {
-  text-decoration: none;
-  color: inherit;
-}
-
-header a:hover {
-  opacity: 0.7;
-}
-
-header {
-  margin-bottom: 2rem;
-}
-
-header hr {
-  border: none;
-  border-top: 1px solid #e0e0e0;
-  margin-top: 0.75rem;
 }
 
 article a {
@@ -136,4 +131,26 @@ article a {
 
 article a:hover {
   color: #0051a2;
+}
+
+/* Audio */
+audio {
+  width: 100%;
+  margin: 0.25rem 0 0.75rem 0;
+}
+
+p:has(+ audio) {
+  margin-bottom: 0.5rem;
+}
+
+audio + p {
+  margin-top: 2rem;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.25rem;
+  margin-bottom: 2rem;
 }

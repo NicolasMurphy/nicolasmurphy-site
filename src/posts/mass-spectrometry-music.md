@@ -14,7 +14,17 @@ I had stumbled across this on X a few years back, and ever since then I have bee
 
 I'm no expert in DSP or chemistry, but I know my way around building some basic python scripts and using DSP related tools like max/msp. Naturally, that is where this project started.
 
-In my research I had come across mass spectrometry data, which had similarity to my own understanding of additive synthesis. The spectrometry data being just a list of m/z values and intensities - this complemented perfectly with my understanding of audio - just a bunch of sine waves which are just frequencies and volumes. The commonality being they both are just two columns of data. All I had to do was convert the spectrometry data into audio data. Early experiments with this were rather manual, but this was the foundation of what eventually became...
+In my research I had come across mass spectrometry data, which had similarity to my own understanding of additive synthesis. The spectrometry data being just a list of m/z values and intensities - this complemented perfectly with my understanding of audio - just a bunch of sine waves which are just frequencies and volumes. The commonality being they both are just two columns of data. All I had to do was convert the spectrometry data into audio data.
+
+```
+73.04018778 16.07
+75.05583784 2.04
+84.08132432 1.26
+162.0555035 1.79
+186.1242518 7.24
+```
+
+Early experiments with this were rather manual, but this was the foundation of what eventually became...
 
 [Mass Spectrum to Audio Converter](https://mass-spectrum-to-audio-converter.onrender.com/)
 
