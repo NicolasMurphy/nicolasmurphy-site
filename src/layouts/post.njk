@@ -1,0 +1,17 @@
+---
+layout: base.njk
+---
+
+<article>
+  <header>
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+    <time>{{ page.date | postDate }}</time>
+  </header>
+
+  {{ content | safe }}
+
+  <footer>
+    <a href="/">← Back</a>
+  </footer>
+</article>
