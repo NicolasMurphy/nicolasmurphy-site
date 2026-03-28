@@ -131,6 +131,14 @@ article header p {
   margin-bottom: 0.25rem;
 }
 
+/* Horizontal rules */
+article hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 3rem 0;
+  opacity: 0.5;
+}
+
 /* Audio */
 audio {
   width: 100%;
@@ -202,6 +210,9 @@ footer a:hover {
   }
   ::selection {
     background: #333;
+  }
+  article hr {
+    border-top-color: #444;
   }
   audio {
     color-scheme: dark;
