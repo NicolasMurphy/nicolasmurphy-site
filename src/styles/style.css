@@ -167,6 +167,12 @@ footer {
   margin-top: 6rem;
   padding-top: 1rem;
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer div {
+  display: flex;
   gap: 1.5rem;
 }
 
